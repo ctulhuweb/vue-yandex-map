@@ -2,7 +2,7 @@
   "name": "vue-yandex-maps",
   "version": "0.11.1",
   "description": "Yandex Maps component for VueJS.",
-  "main": "dist/vue-yandex-maps.js",
+  "main": "dist/vue-yandex-maps.umd.js",
   "module": "dist/vue-yandex-maps.esm.js",
   "unpkg": "dist/vue-yandex-maps.min.js",
   "scripts": {
@@ -38,7 +38,7 @@
     "eslint-plugin-jest": "^22.19.0",
     "eslint-plugin-vue": "^5.0.0",
     "jest": "^24.9.0",
-    "rollup": "^1.1.0",
+    "rollup": "^1.32.1",
     "rollup-plugin-babel": "^4.3.0",
     "rollup-plugin-terser": "^4.0.4",
     "rollup-plugin-uglify": "^6.0.2",
