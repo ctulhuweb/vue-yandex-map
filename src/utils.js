@@ -219,7 +219,7 @@ export function ymapLoader(settings = {}) {
       enterprise = false,
     } = settings;
     const mode = debug ? 'debug' : 'release';
-    const settingsPart = `lang=${lang}${apiKey && `&apikey=${apiKey}`}&mode=${mode}&coordorder=${coordorder}`;
+    let settingsPart = `lang=${lang}${apiKey && `&apikey=${apiKey}`}&mode=${mode}&coordorder=${coordorder}`;
     if (suggestApiKey) settingsPart += `&suggest_apikey=${suggestApiKey}`;
     const link = `https://${enterprise ? 'enterprise.' : ''}api-maps.yandex.ru/${version}/?${settingsPart}`;
     yandexMapScript.setAttribute('src', link);
